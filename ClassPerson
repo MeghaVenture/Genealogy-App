@@ -1,0 +1,35 @@
+# Genealogy-App
+a  family tree database app
+
+class Person: 
+"""The people/members of a family tree. Must have a name and a Boolen for if they are alive or not."""
+
+  def __init__(self, perfered_name, alive_T/F):
+    self.name = perfered_name
+    self.alive = alive_T/F
+    self.birth = births{}
+    
+    
+  ## BIRTH
+  def add_birth(self, birth, source):
+    """Add a birth and source to a person, in a tulip of births and sources."""
+    pass
+    
+  def display_births(self, births):
+    self.births = births
+ 
+    
+ ## DEATH, BURIAL, & SS
+ def add_death(self, death, source):
+    """Add a death and source to a person, in a tulip of deaths and sources."""
+    pass
+    
+    
+ ## MARRIAGE 
+ def add_marriage(self, marriage, source):
+    """Add a marriage and a source to a person, in a tulip of Marriages and sources."""
+    pass
+    
+ ## RELATIONSHIPS
+ 
+  
