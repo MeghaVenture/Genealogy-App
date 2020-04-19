@@ -1,0 +1,112 @@
+class Person():
+  """A person in a family tree. Intialized with a perfered name, a Family tree ID, and a boolen of alive."""
+  ## must use function to creat person objects so that id number is calculated for user 
+  ## (target family set on setup, then add mother/father/partner/sibling/child from a pedigree person - otherwise only partner & child).
+  
+  def __init__(self, prefered_name, pedigree_T/F, family_tree_ID#, alive_T/F):
+    self.prefered_name = prefered_name      ## added to self.names etc
+    self.pedigree = pedigree_T/F            ## bool
+    self.tree_id = family_tree_ID#          ## list of lists = [[gen#, #,..],...]
+    self.alive = alive_T/F                  ## bool
+    
+    ##OTHER OPTIONAL ATTRABUTS        ## vv Dictionaries as {[info as a list]: source, ...}
+    self.first_names = {}
+    self.middle_names = {}
+    self.last_names = {}
+    self.nick_names = {}
+    self.names = {}
+    self.birth = {}
+    self.prefered_birth = self.birth[1]
+    self.siblings = {}                  ## all: full, Mhalf, Phalf, step, foster/adopted
+    self.fathers = {}                   ## biological, step, foster, adoptive
+    self.mothers = {}                   ## biological, step, foster, adoptive
+    self.marriages = {}
+    self.partners = {}
+    self.children = {}                  ## biological, step, foster, adoptive
+    self.death = {}
+    self.burial = {}
+    
+    ## vv UNSURE OF
+    #self.travel_list = {}
+    #self.homes = {}
+    #self.nationality = {}
+    #self.faith = {}
+    
+  def __str__():
+    return ('The Family Tree Entry for {self.name} born {self.prefered_birth}, with the ID number {self.tree_id}.'.format(self=self)) 
+    
+    ## GETTERS
+    def prefered_name():
+      pass
+    def get_tree_id():
+      pass
+    def get_alive():
+      pass
+    def get_first_names():
+      pass
+    def get_middle_names():
+      pass
+    def get_last_names():
+      pass
+    def get_nick_names():
+      pass
+    def get_names():
+      pass
+    def get_birth():
+      pass
+    def get_perfered_birth():
+      pass
+    def get_siblings():
+      pass
+    def get_marriages():
+      pass
+    def get_partners():
+      pass
+    def get_children():
+      pass
+    def get_death():
+      pass
+    def get_burial():
+      pass
+    
+    ## SETTERS
+    def set_name();
+      pass
+    def set_tree_id():
+      pass
+    def set_alive():
+      pass
+    def add_name():
+      pass
+    def add_first_name():
+      pass
+    def add_middle_name():
+      pass
+    def add_last_name():
+      pass
+    def add_nick_name():
+      pass
+    def add_birth():
+      pass
+    def add_marriage():
+      pass
+    def add_death():
+      pass
+    def add_burial():
+      pass
+      
+    ## ADD PEOPLE to tree as Person objects AND as entries into dictionary with sources
+    ## Parents and Siblings can only be added to Pedigree Persons
+    def add_father():         ## id = ((child's gen) + 1)-(((child's #)*2)-1)
+      pass
+    def add_mother():         ## id = ((child's gen) + 1)-((child's #)*2)
+      pass
+    def add_sibling():        ## id = (pedi siblings id)-(birth order#)
+      pass
+    def add_partner():        ## id = (partner's id)(partner #)s
+      pass
+    def add_child():          ## id = (parents id)(birth order to parent)c
+      pass
+    
+    
+    
