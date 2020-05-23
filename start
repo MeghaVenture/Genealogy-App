@@ -1,0 +1,68 @@
+#!/usr/bin/env python
+
+def main():
+  ## Opening. List options of main tasks
+  print("Hello, welcome to MeghaTree. What would you like to do?")
+  print("Create a new Family tree? Enter 1")
+  print("Edit a Family tree? Enter 2")
+  print("Compile a Family tree from a document? Enter 3")
+  print("Compare two or more family trees? Enter 4")
+  print("Create a new version of a tree with a different homeperson? Enter 5")
+  
+  ## User picks task
+  task = input(int("Please Enter the number for the task you would like: "))
+  
+  ## Check that task is valid, keep asking until it is
+  While task < 0 || task > 5:
+    print("Sorry, that is not a valid comand. Please enter a single numeral digit.")
+    task = input(int("Please Enter the number for the task you would like: "))
+    return task
+ 
+  ## for answers in valid range. Start functions for each option.
+  While task < 6 && task > 0:
+    if task = 1:        ##CREATE a tree by user entering info into program
+      create_tree()
+    else if task = 2:   ##EDIT a tree by user entering info into program
+      edit_tree()
+    else if task = 3:   ##IMPORT a file and COMPILE a new tree from it
+      compile_tree()
+    else if task = 4:   ##COMPARE 2+ trees. Option to create or edit trees
+      compare_trees()
+    else if task - 5:   ##REcreate tree with different homeperson or different settings.
+      recreate_tree()
+    else:
+      print("Something went wrong. Please enter a single numeral digit.")
+      task = input(int("Please Enter the number for the task you would like: "))
+      return task
+    
+if __name__ == '__main__':
+  main()
+  
+## vv FUNCTIONS vv
+def create_tree():      ##CREATE a tree by user entering info into program
+  created_tree_name = input("What would you like to name this file? ")
+  
+  pass
+  
+def edit_tree():        ##EDIT a tree by user entering info into program
+  edited_tree_name = input("What file would you like to edit? ")
+  
+  pass
+  
+def compile_tree():     ##IMPORT a file and COMPILE a new tree from it
+  file_to_compile = input("What is the name of the file you could like to mine? ")
+  compiled_tree_name = input("What would you like the resulting tree to be named? ")
+  
+  pass
+  
+def compare_trees():    ##COMPARE 2+ trees. Option to create or edit trees
+  num_to_compare = input("How many files would you like to compare? ")
+    
+  pass
+
+def recreate_tree():    ##REcreate tree with different homeperson or different settings.
+  file_to_recreate = input("Which file would you like to create a new version of? ")
+  recreated_tree_name = input("What would you like the new version to be named? ")
+  
+  pass
+  
